@@ -25,6 +25,12 @@ En la carpeta de helpers/dataScene.js contendra la informacion donde se llenara 
 
 # Documentacion
 
-https://github.com/farminf/pannellum-react
+https://github.com/farminf/pannellum-react (Para Habilitar Fotos 360)
 
-https://modelviewer.dev/
+https://modelviewer.dev/ (Integrar Objetos 3D)
+
+https://tinyjpg.com/ (Comprimir las imagenes)
+
+https://unsplash.com/es (Galeria de Imagenes)
+
+https://sketchfab.com/ (Descargar Objetos 3D)
