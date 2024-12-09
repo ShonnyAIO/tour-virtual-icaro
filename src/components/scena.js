@@ -4,16 +4,15 @@ import dataScene from "../helpers/dataScene";
 
 import '../styles/scene.css';
 import '@google/model-viewer/dist/model-viewer';
-import Computer from '../objects/retro_computer.glb';
+// import Computer from '../objects/retro_computer.glb';
 
 export default function Scene() {
 
     const [scene, setScene] = useState(dataScene['insideOne']);
 
-    const [show3D, setShow3D] = useState(false);
 
-
-    const hotSpots = (element, i) => {
+    const hostSpots = (element, i) => {
+        console.log(element);
         if (element.cssClass === 'hotSpotElement') return (
             <Pannellum.Hotspot
                 key={i}
@@ -68,27 +67,14 @@ export default function Scene() {
                 showZoomCtrl={false}
                 orientationOnByDefault={true}
                 hotspotDebug={true}
-                onRender={ () => {
-                    console.log('EMPEZE EL COMPONENTE');
-                    setShow3D(true);
-                }}
             >
                 
                 {
                     Object.values(scene.hostSpots).map((element, i) =>
-                        hotSpots(element, i)
+                        hostSpots(element, i)
                     )
                 }
             </Pannellum>
-
-            <div className="float-3D">
-                { show3D ? 
-                    <model-viewer ar src={Computer} auto-rotate camera-controls> </model-viewer> 
-                    : 
-                    <> </>
-                }
-            </div>
-
         </>
     );
 }

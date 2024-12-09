@@ -34,3 +34,10 @@ https://tinyjpg.com/ (Comprimir las imagenes)
 https://unsplash.com/es (Galeria de Imagenes)
 
 https://sketchfab.com/ (Descargar Objetos 3D)
+
+https://www.insta360.com/es/download/app/studio2019 (Descargar el 360 Studio, para exportar desde la PC)
+
+Exportar la imagen 360 en resolucion de 4096 x 2048
+
+https://play.google.com/store/apps/details?id=com.magic.retouch&hl=es_VE (Decargar el Retouch para Editar)
+
