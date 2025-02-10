@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/index.css';
+import App from './App';
+import VideoPlayer from './pages/videoplayer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/video/:id" element={ <VideoPlayer /> } />
+    </Routes>
+    </BrowserRouter>
+    
 );
 
 // If you want to start measuring performance in your app, pass a function
