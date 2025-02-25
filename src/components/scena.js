@@ -65,7 +65,7 @@ export default function Scene() {
                     showFullscreenCtrl={false}
                     showZoomCtrl={false}
                     orientationOnByDefault={true}
-                    hotspotDebug={true}
+                    hotspotDebug={false}
                 >
                     {
                         Object.values(scene.hostSpots).map((element, i) =>

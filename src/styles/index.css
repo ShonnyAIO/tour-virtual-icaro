@@ -30,3 +30,7 @@
     border-radius: 30%;
     cursor: pointer;
 }
+
+.infoSpotElement::after{
+    content: "VIDEO GUIA"
+}
