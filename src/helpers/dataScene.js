@@ -1,4 +1,4 @@
-import insideOne from '../images/ICARO_1.jpg';
+// import insideOne from '../images/ICARO_1.jpg';
 import insideTest from '../images/SALA_PRUEBA_2.jpg';
 import insideTwo from '../images/ICARO_2.jpg'; 
 
