@@ -23,14 +23,15 @@ const Scene = {
                 pitch : -14.102829964881176,
                 yaw: 80.27662741602644,
                 url : 'https://youtu.be/FVtBk4OrzcA',
-                cssClass : 'hotSpotElement'
+                cssClass : 'hotSpotElement',
+                
             },
             sala_inmersiva : {
                 type: 'custom',
                 pitch : -21.312180708800273,
                 yaw : 179.19588347346135,
                 url : 'https://framevr.io/cme-microscopia-mincyt',
-                cssClass : 'hotSpotElement'
+                cssClass : 'inmersiveClass'
             }
         }
     },

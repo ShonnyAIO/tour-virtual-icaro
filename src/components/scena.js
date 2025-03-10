@@ -10,12 +10,13 @@ export default function Scene() {
     const [previosScene, setPreviosScene] = useState([]);
 
     const hotSpots = (element, i) => {
-        if (element.cssClass === 'hotSpotElement') return (
+        if (element.type === 'custom') return (
             <Pannellum.Hotspot
                 key={i}
                 type={element.type}
                 pitch={element.pitch}
                 yaw={element.yaw}
+                cssClass={element.cssClass}
                 handleClick={() => {
                     window.open(element.url, "_blank");
                 }}
