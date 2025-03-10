@@ -1,6 +1,7 @@
 // import insideOne from '../images/ICARO_1.jpg';
-import insideTest from '../images/SALA_PRUEBA_2.jpg';
-import insideTwo from '../images/ICARO_2.jpg'; 
+import insideTest from '../images/SALA_2.jpg';
+import insideTwo from '../images/SALA_1.jpg'; 
+import pasilloDos from '../images/PASILLO_2.jpg';
 
 const Scene = {
     insideOne: {
@@ -10,7 +11,7 @@ const Scene = {
         yaw : -22.505222725306716,
         hfov : 200,
         hostSpots : {
-            primer_punto : {
+            /*primer_punto : {
                 type: 'info',
                 pitch : -21.696123267455846,
                 yaw :  -37.20072163589748,
@@ -24,7 +25,6 @@ const Scene = {
                 yaw: 80.27662741602644,
                 url : 'https://youtu.be/FVtBk4OrzcA',
                 cssClass : 'hotSpotElement',
-                
             },
             sala_inmersiva : {
                 type: 'custom',
@@ -32,25 +32,55 @@ const Scene = {
                 yaw : 179.19588347346135,
                 url : 'https://framevr.io/cme-microscopia-mincyt',
                 cssClass : 'inmersiveClass'
-            }
+            },*/
+            pasillo_2_scene : {
+                type : 'custom',
+                pitch :-5.967546874205235,
+                yaw : -46.1698115182981,
+                scene : 'pasillo2',
+                cssClass :'moveScene'
+            },
         }
-    },
-    insideTwo : {
-        title : "Sala Secundaria",
-        image : insideTwo,
-        pitch : -10.242741460892963,
-        yaw : -175.7908930798215,
-        hfov : 200,
-        hostSpots : {
+    }, 
+    pasillo2 : {
+        title : "Pasillo ICARO",
+        image : pasilloDos,
+        pitch : -4.294711748894169,
+        yaw : -22.505222725306716,
+        hfov: 200,
+        hostSpots:{
             primer_punto : {
                 type: 'custom',
-                pitch : -19.768384220588374,
-                yaw :  163.98341826404987,
+                pitch : -2.878806796347889,
+                yaw :  -19.20670989114869,
                 scene : 'insideOne',
                 cssClass : 'moveScene'
             },
+            segundo_punto : {
+                type:'custom',
+                pitch :-4.500891359210941,
+                yaw :24.88489381500314,
+                scene:'insideTwo',
+                cssClass:'moveScene',
+            }
         }
-    }
+    }, 
+    insideTwo: {
+        title : "Sala ICARO",
+        image: insideTwo,
+        pitch : -4.294711748894169,
+        yaw : -22.505222725306716,
+        hfov: 200,
+        hostSpots:{
+            primer_punto : {
+                type: 'custom',
+                pitch : -4.335589370748943,
+                yaw :  -56.42130847445762,
+                scene : 'pasillo2',
+                cssClass : 'moveScene'
+            }
+        }
+    },
 };
 
 export default Scene;
