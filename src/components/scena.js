@@ -11,9 +11,7 @@ export default function Scene() {
 
     const hotSpots = (element, i) => {
 
-        console.log('element', element);
-
-        if ( (element.cssClass === 'hotSpotElement') || (element.cssClass === 'inmersiveClass') ) return (
+        if ((element.cssClass === 'hotSpotElement') || (element.cssClass === 'inmersiveClass') ) return (
             <Pannellum.Hotspot
                 key={i}
                 type={element.type}
@@ -40,8 +38,10 @@ export default function Scene() {
                 }}
             />
         );
+             
 
-        else if (element.cssClass === 'infoSpotElement') return (
+
+        if (element.cssClass === 'infoSpotElement') return (
             <Pannellum.Hotspot
                 key={i}
                 type={element.type}
