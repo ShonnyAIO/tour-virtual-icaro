@@ -1,6 +1,6 @@
 // import insideOne from '../images/ICARO_1.jpg';
-import insideTest from '../images/SALA_PRUEBA_2.jpg';
-import insideTwo from '../images/ICARO_2.jpg'; 
+import insideTest from '../images/PASILLO_2.jpg';
+import insideTwo from '../images/PASILLO_2.jpg'; 
 
 const Scene = {
     insideOne: {
@@ -32,7 +32,15 @@ const Scene = {
                 yaw : 179.19588347346135,
                 url : 'https://framevr.io/cme-microscopia-mincyt',
                 cssClass : 'inmersiveClass'
-            }
+            },
+            /* 
+            nextScene : {
+                type: 'custom',
+                pitch : -19.768384220588374,
+                yaw :  163.98341826404987,
+                scene : 'insideTwo',
+                cssClass : 'moveScene'
+            },  */
         }
     },
     insideTwo : {
